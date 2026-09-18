@@ -1,12 +1,17 @@
-# FutureViz Components v2
+# FutureViz Components
 
-Open UI Components Pack for Power BI, DataStudio and HTML.
+Componentes curados para Power BI, DataStudio e WebDev.
 
-- 60 components: 15 Cards, 15 Storytelling, 15 Labels, 15 Tooltips.
-- Light and Dark variants.
-- Creative Lab builder.
-- DAX, DataStudio and HTML outputs.
-- PT, EN, ES and DE navigation.
-- Visual guides, logo and favicon.
+## Conteúdo
 
-Upload all files preserving the folder structure. Total: fewer than 100 files.
+- 12 componentes recuperados do Power BI UI Cards Lab v1.
+- 8 componentes derivados dos testes validados no DataStudio/Templr.
+- Central de Coleções com visualização em modal.
+- Laboratório Criativo: editar modelo ou criar do zero.
+- Power BI: saída DAX.
+- DataStudio: Template (HTML), Style (CSS) e Experimental (JS).
+- WebDev: HTML, CSS e JS.
+- Gerador de paleta com harmonias e personalização manual.
+- Guias visuais e identidade FutureViz.
+
+Criado por Kaíque Passaros. Licença MIT.

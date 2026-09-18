@@ -2,4 +2,4 @@
 
 ## 2.0.0
 
-Multipage redesign, 60 components, Creative Lab builder, Light/Dark, i18n, guides and FutureViz brand.
+Redesign multipágina, coleção curada, modal de visualização, Laboratório Criativo por plataforma, Data Flow Field, guias e identidade FutureViz.

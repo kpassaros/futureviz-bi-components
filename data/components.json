@@ -1,962 +1,262 @@
 [
   {
     "id": 1,
-    "slug": "kpi-essencial",
-    "name": "KPI essencial",
-    "category": "cards",
-    "variant": 0,
+    "slug": "receita-total",
+    "name": "Receita total",
+    "category": "Cards e KPIs",
+    "platform": "powerbi",
+    "type": "revenue",
+    "description": "KPI principal com variação e tendência mensal.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 2,
-    "slug": "comparativo-de-periodo",
-    "name": "Comparativo de período",
-    "category": "cards",
-    "variant": 1,
+    "slug": "progresso-meta",
+    "name": "Progresso da meta",
+    "category": "Cards e KPIs",
+    "platform": "powerbi",
+    "type": "goal",
+    "description": "Realização, objetivo e diferença restante.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 3,
-    "slug": "meta-versus-realizado",
-    "name": "Meta versus realizado",
-    "category": "cards",
-    "variant": 2,
+    "slug": "comparativo-mensal",
+    "name": "Comparativo mensal",
+    "category": "Cards e KPIs",
+    "platform": "powerbi",
+    "type": "compare",
+    "description": "Atual versus período anterior.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 4,
-    "slug": "kpi-duplo",
-    "name": "KPI duplo",
-    "category": "cards",
-    "variant": 3,
+    "slug": "fluxo-caixa",
+    "name": "Fluxo de caixa",
+    "category": "Cards e KPIs",
+    "platform": "powerbi",
+    "type": "cashflow",
+    "description": "Entradas, saídas e saldo consolidado.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 5,
-    "slug": "multi-kpi-horizontal",
-    "name": "Multi-KPI horizontal",
-    "category": "cards",
-    "variant": 4,
+    "slug": "status-operacional",
+    "name": "Status operacional",
+    "category": "Storytelling",
+    "platform": "powerbi",
+    "type": "status",
+    "description": "Saúde da operação e última atualização.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 6,
-    "slug": "resumo-financeiro",
-    "name": "Resumo financeiro",
-    "category": "cards",
-    "variant": 5,
+    "slug": "grid-multi-kpi",
+    "name": "Grid multi-KPI",
+    "category": "Cards e KPIs",
+    "platform": "powerbi",
+    "type": "multi",
+    "description": "Indicadores compactos para visão executiva.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 7,
-    "slug": "fluxo-de-caixa",
-    "name": "Fluxo de caixa",
-    "category": "cards",
-    "variant": 6,
+    "slug": "analise-tendencias",
+    "name": "Análise de tendências",
+    "category": "Storytelling",
+    "platform": "powerbi",
+    "type": "trend",
+    "description": "Comparação com semana, mês e ano.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 8,
-    "slug": "progresso-de-meta",
-    "name": "Progresso de meta",
-    "category": "cards",
-    "variant": 7,
+    "slug": "ranking-compacto",
+    "name": "Ranking compacto",
+    "category": "Storytelling",
+    "platform": "powerbi",
+    "type": "ranking",
+    "description": "Concentração com barras relativas e leitura neutra.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 9,
-    "slug": "analise-de-tendencia",
-    "name": "Análise de tendência",
-    "category": "cards",
-    "variant": 8,
+    "slug": "funil-conversao",
+    "name": "Funil de conversão",
+    "category": "Storytelling",
+    "platform": "powerbi",
+    "type": "funnel",
+    "description": "Etapas e conversão em estrutura compacta.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 10,
-    "slug": "status-operacional",
-    "name": "Status operacional",
-    "category": "cards",
-    "variant": 9,
+    "slug": "tickets-sla",
+    "name": "Tickets e SLA",
+    "category": "Cards e KPIs",
+    "platform": "powerbi",
+    "type": "sla",
+    "description": "Volume aberto, criticidade e tempo médio.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 11,
-    "slug": "sprint-e-tarefas",
-    "name": "Sprint e tarefas",
-    "category": "cards",
-    "variant": 10,
+    "slug": "saude-estoque",
+    "name": "Saúde do estoque",
+    "category": "Cards e KPIs",
+    "platform": "powerbi",
+    "type": "inventory",
+    "description": "Disponibilidade e exceções de inventário.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 12,
-    "slug": "sla-e-tickets",
-    "name": "SLA e tickets",
-    "category": "cards",
-    "variant": 11,
+    "slug": "sprint-andamento",
+    "name": "Sprint em andamento",
+    "category": "Storytelling",
+    "platform": "powerbi",
+    "type": "sprint",
+    "description": "Progresso, tarefas e prazo em destaque.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 13,
-    "slug": "estoque-e-disponibilidade",
-    "name": "Estoque e disponibilidade",
-    "category": "cards",
-    "variant": 12,
+    "slug": "meta-realizado",
+    "name": "Meta versus realizado",
+    "category": "Cards e KPIs",
+    "platform": "both",
+    "type": "goalactual",
+    "description": "Atingimento correto: realizado dividido pelo previsto.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 14,
-    "slug": "receita-por-canal",
-    "name": "Receita por canal",
-    "category": "cards",
-    "variant": 13,
+    "slug": "escoamentos",
+    "name": "Principais escoamentos",
+    "category": "Storytelling",
+    "platform": "both",
+    "type": "outflow",
+    "description": "Top categorias sem linguagem de pódio.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 15,
-    "slug": "visao-executiva-compacta",
-    "name": "Visão executiva compacta",
-    "category": "cards",
-    "variant": 14,
+    "slug": "top-n-dinamico",
+    "name": "Top N dinâmico",
+    "category": "Storytelling",
+    "platform": "datastudio",
+    "type": "topn",
+    "description": "Top 5, Top 10 e Todos com CSS validado.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 16,
-    "slug": "insight-principal",
-    "name": "Insight principal",
-    "category": "storytelling",
-    "variant": 0,
+    "slug": "tabela-executiva",
+    "name": "Tabela executiva",
+    "category": "Storytelling",
+    "platform": "datastudio",
+    "type": "table",
+    "description": "Cabeçalho fixo, scroll e grande volume.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 17,
-    "slug": "resumo-executivo",
-    "name": "Resumo executivo",
-    "category": "storytelling",
-    "variant": 1,
+    "slug": "metadados-dinamicos",
+    "name": "Metadados dinâmicos",
+    "category": "Labels",
+    "platform": "datastudio",
+    "type": "metadata",
+    "description": "Nomes de dimensão e métrica vindos do relatório.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 18,
-    "slug": "explicacao-de-variacao",
-    "name": "Explicação de variação",
-    "category": "storytelling",
-    "variant": 2,
+    "slug": "estado-sem-dados",
+    "name": "Estado sem dados",
+    "category": "Storytelling",
+    "platform": "datastudio",
+    "type": "empty",
+    "description": "Mensagem visual para filtros sem resultado.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 19,
-    "slug": "alerta-de-anomalia",
-    "name": "Alerta de anomalia",
-    "category": "storytelling",
-    "variant": 3,
+    "slug": "tooltip-contextual",
+    "name": "Tooltip contextual",
+    "category": "Tooltips",
+    "platform": "both",
+    "type": "tooltip",
+    "description": "Detalhe simples e compatível com hover.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   },
   {
     "id": 20,
-    "slug": "principal-conclusao",
-    "name": "Principal conclusão",
-    "category": "storytelling",
-    "variant": 4,
+    "slug": "faixa-atraso",
+    "name": "Faixa de atraso",
+    "category": "Labels",
+    "platform": "datastudio",
+    "type": "delay",
+    "description": "Distribuição por faixas e intensidade.",
     "themes": [
       "light",
       "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 21,
-    "slug": "bloco-de-contexto",
-    "name": "Bloco de contexto",
-    "category": "storytelling",
-    "variant": 5,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 22,
-    "slug": "recomendacao",
-    "name": "Recomendação",
-    "category": "storytelling",
-    "variant": 6,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 23,
-    "slug": "risco-e-oportunidade",
-    "name": "Risco e oportunidade",
-    "category": "storytelling",
-    "variant": 7,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 24,
-    "slug": "resumo-do-periodo",
-    "name": "Resumo do período",
-    "category": "storytelling",
-    "variant": 8,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 25,
-    "slug": "timeline-de-marcos",
-    "name": "Timeline de marcos",
-    "category": "storytelling",
-    "variant": 9,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 26,
-    "slug": "feed-de-atividades",
-    "name": "Feed de atividades",
-    "category": "storytelling",
-    "variant": 10,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 27,
-    "slug": "narrativa-de-decomposicao",
-    "name": "Narrativa de decomposição",
-    "category": "storytelling",
-    "variant": 11,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 28,
-    "slug": "narrativa-de-meta",
-    "name": "Narrativa de meta",
-    "category": "storytelling",
-    "variant": 12,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 29,
-    "slug": "aviso-de-qualidade-dos-dados",
-    "name": "Aviso de qualidade dos dados",
-    "category": "storytelling",
-    "variant": 13,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 30,
-    "slug": "comparacao-de-cenarios",
-    "name": "Comparação de cenários",
-    "category": "storytelling",
-    "variant": 14,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 31,
-    "slug": "titulo-de-secao",
-    "name": "Título de seção",
-    "category": "labels",
-    "variant": 0,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 32,
-    "slug": "label-de-kpi",
-    "name": "Label de KPI",
-    "category": "labels",
-    "variant": 1,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 33,
-    "slug": "badge-de-status",
-    "name": "Badge de status",
-    "category": "labels",
-    "variant": 2,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 34,
-    "slug": "tag-de-categoria",
-    "name": "Tag de categoria",
-    "category": "labels",
-    "variant": 3,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 35,
-    "slug": "chip-de-variacao",
-    "name": "Chip de variação",
-    "category": "labels",
-    "variant": 4,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 36,
-    "slug": "intervalo-de-datas",
-    "name": "Intervalo de datas",
-    "category": "labels",
-    "variant": 5,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 37,
-    "slug": "fonte-dos-dados",
-    "name": "Fonte dos dados",
-    "category": "labels",
-    "variant": 6,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 38,
-    "slug": "ultima-atualizacao",
-    "name": "Última atualização",
-    "category": "labels",
-    "variant": 7,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 39,
-    "slug": "resumo-de-filtros",
-    "name": "Resumo de filtros",
-    "category": "labels",
-    "variant": 8,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 40,
-    "slug": "posicao-de-concentracao",
-    "name": "Posição de concentração",
-    "category": "labels",
-    "variant": 9,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 41,
-    "slug": "unidade-da-metrica",
-    "name": "Unidade da métrica",
-    "category": "labels",
-    "variant": 10,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 42,
-    "slug": "label-de-meta",
-    "name": "Label de meta",
-    "category": "labels",
-    "variant": 11,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 43,
-    "slug": "severidade",
-    "name": "Severidade",
-    "category": "labels",
-    "variant": 12,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 44,
-    "slug": "progresso-ou-conclusao",
-    "name": "Progresso ou conclusão",
-    "category": "labels",
-    "variant": 13,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 45,
-    "slug": "breadcrumb-de-navegacao",
-    "name": "Breadcrumb de navegação",
-    "category": "labels",
-    "variant": 14,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 46,
-    "slug": "tooltip-simples",
-    "name": "Tooltip simples",
-    "category": "tooltips",
-    "variant": 0,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 47,
-    "slug": "titulo-e-descricao",
-    "name": "Título e descrição",
-    "category": "tooltips",
-    "variant": 1,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 48,
-    "slug": "detalhamento-de-metricas",
-    "name": "Detalhamento de métricas",
-    "category": "tooltips",
-    "variant": 2,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 49,
-    "slug": "comparativo-de-periodo",
-    "name": "Comparativo de período",
-    "category": "tooltips",
-    "variant": 3,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 50,
-    "slug": "explicacao-de-formula",
-    "name": "Explicação de fórmula",
-    "category": "tooltips",
-    "variant": 4,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 51,
-    "slug": "motivo-do-status",
-    "name": "Motivo do status",
-    "category": "tooltips",
-    "variant": 5,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 52,
-    "slug": "fonte-e-atualizacao",
-    "name": "Fonte e atualização",
-    "category": "tooltips",
-    "variant": 6,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 53,
-    "slug": "contexto-de-data",
-    "name": "Contexto de data",
-    "category": "tooltips",
-    "variant": 7,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 54,
-    "slug": "tooltip-multi-kpi",
-    "name": "Tooltip multi-KPI",
-    "category": "tooltips",
-    "variant": 8,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 55,
-    "slug": "limites-e-faixas",
-    "name": "Limites e faixas",
-    "category": "tooltips",
-    "variant": 9,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 56,
-    "slug": "ajuda-de-utilizacao",
-    "name": "Ajuda de utilização",
-    "category": "tooltips",
-    "variant": 10,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 57,
-    "slug": "alerta-contextual",
-    "name": "Alerta contextual",
-    "category": "tooltips",
-    "variant": 11,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 58,
-    "slug": "detalhe-da-entidade",
-    "name": "Detalhe da entidade",
-    "category": "tooltips",
-    "variant": 12,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 59,
-    "slug": "explicacao-de-tendencia",
-    "name": "Explicação de tendência",
-    "category": "tooltips",
-    "variant": 13,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
-    ]
-  },
-  {
-    "id": 60,
-    "slug": "qualidade-e-disponibilidade",
-    "name": "Qualidade e disponibilidade",
-    "category": "tooltips",
-    "variant": 14,
-    "themes": [
-      "light",
-      "dark"
-    ],
-    "platforms": [
-      "powerbi",
-      "datastudio",
-      "html"
     ]
   }
 ]
