@@ -1,0 +1,24 @@
+<input class="fv-radio" type="radio" name="fv-limit" id="fv-5" checked>
+<input class="fv-radio" type="radio" name="fv-limit" id="fv-10">
+<input class="fv-radio" type="radio" name="fv-limit" id="fv-all">
+
+<section class="fv-flow">
+  <header class="fv-header">
+    <details class="fv-menu">
+      <summary><span class="fv-current fv-current-5">Top 5</span><span class="fv-current fv-current-10">Top 10</span><span class="fv-current fv-current-all">Todos</span></summary>
+      <div><label for="fv-5">Top 5</label><label for="fv-10">Top 10</label><label for="fv-all">Todos</label></div>
+    </details>
+    <span title="{{lookup (lookup fields.dimensions 0) 'name'}}">{{lookup (lookup fields.dimensions 0) "name"}}</span>
+    <span class="fv-metric-title" title="{{lookup (lookup fields.metrics 0) 'name'}}">{{lookup (lookup fields.metrics 0) "name"}}</span>
+  </header>
+
+  {{#each data.DEFAULT}}
+    <div class="fv-row">
+      <i>{{add @index 1}}</i>
+      <span class="fv-label" title="{{lookup dimensions 0}}">{{lookup dimensions 0}}</span>
+      <b title="R$ {{localeString (lookup metrics 0) 'pt-BR'}}">R$ {{localeString (lookup metrics 0) "pt-BR"}}</b>
+    </div>
+  {{else}}
+    <div class="fv-empty">Nenhum registro encontrado</div>
+  {{/each}}
+</section>

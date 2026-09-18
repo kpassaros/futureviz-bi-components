@@ -1,0 +1,21 @@
+{{#each data.DEFAULT}}
+  <article class="fv-goal">
+    <header>{{lookup (lookup fields.metrics 0) "name"}}</header>
+    <strong>R$ {{localeString (lookup metrics 0) "pt-BR"}}</strong>
+    <div class="fv-secondary">
+      <span>{{lookup (lookup fields.metrics 1) "name"}}</span>
+      <b>R$ {{localeString (lookup metrics 1) "pt-BR"}}</b>
+    </div>
+    {{#if (eq (lookup metrics 1) 0)}}
+      <p class="fv-neutral">Não há valor previsto para comparação</p>
+    {{else}}
+      {{#if (gte (lookup metrics 2) 1)}}
+        <p class="fv-positive">{{replace (decimalPrecision (multiply (lookup metrics 2) 100) 2) "." ","}}% · Meta atingida</p>
+      {{else}}
+        <p class="fv-negative">{{replace (decimalPrecision (multiply (lookup metrics 2) 100) 2) "." ","}}% · Abaixo da meta</p>
+      {{/if}}
+    {{/if}}
+  </article>
+{{else}}
+  <div class="fv-empty">Nenhum dado encontrado para os filtros selecionados</div>
+{{/each}}

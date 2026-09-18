@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FutureViz Components — componentes UI configuráveis para Power BI e DataStudio.">
+  <title>FutureViz Components</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="FutureViz Components">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><b>FutureViz</b><small>Components</small></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#colecao">Coleção</a><a href="#lab">Lab</a><a href="#documentacao">Documentação</a>
+      <a class="nav-cta" href="https://github.com/kpassaros/futureviz-bi-components" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="eyebrow"><span></span> Open UI Components Pack</div>
+      <h1>Interfaces de BI que se adaptam aos seus dados.</h1>
+      <p>Componentes configuráveis para Power BI e DataStudio, com metadados dinâmicos, temas, formatos e código pronto para copiar.</p>
+      <div class="hero-actions"><a class="button primary" href="#colecao">Explorar coleção</a><a class="button ghost" href="#lab">Abrir FutureViz Lab</a></div>
+      <div class="hero-meta"><div><strong>20</strong><span>testes validados</span></div><div><strong>2.508</strong><span>linhas testadas</span></div><div><strong>2</strong><span>plataformas</span></div></div>
+      <div class="hero-stage" aria-label="Prévia dos componentes">
+        <article class="mini-card"><span>Saída realizada</span><strong>R$ 2,76 mi</strong><em>Atualizado pelos filtros</em></article>
+        <article class="mini-flow"><header><span>Principais escoamentos</span><small>Top 5</small></header><div><b style="--w:92%">Fornecedores</b><i>R$ 1,19 mi</i></div><div><b style="--w:71%">Transferências</b><i>R$ 830 mil</i></div><div><b style="--w:54%">Impostos</b><i>R$ 626 mil</i></div></article>
+        <article class="mini-progress"><span>Realizado × previsto</span><strong>100,92%</strong><div><i></i></div><em>Meta atingida</em></article>
+      </div>
+    </section>
+
+    <section id="colecao" class="section">
+      <div class="section-heading"><div><span class="kicker">Central de Coleções</span><h2>Escolha, configure e leve para o BI.</h2></div><p>Um componente, várias dimensões, métricas e identidades visuais.</p></div>
+      <div class="filter-row" role="group" aria-label="Filtros da coleção">
+        <button class="chip active" data-filter="all">Todos</button><button class="chip" data-filter="datastudio">DataStudio</button><button class="chip" data-filter="powerbi">Power BI</button><button class="chip" data-filter="kpi">KPIs</button><button class="chip" data-filter="analysis">Análises</button>
+      </div>
+      <div class="collection-grid" id="collectionGrid">
+        <article class="component-card" data-tags="datastudio powerbi kpi" data-component="kpi"><div class="card-preview preview-kpi"><small>Receita realizada</small><strong>R$ 10,4 mi</strong><span>+6,4% no período</span></div><div class="card-copy"><div><span class="tag">Multi-BI</span><span class="status">Validado</span></div><h3>KPI essencial</h3><p>Métrica principal com formato, estado e rótulo orientados por metadados.</p><button class="text-action" data-open-lab="kpi">Configurar componente →</button></div></article>
+        <article class="component-card" data-tags="datastudio powerbi analysis" data-component="flow"><div class="card-preview preview-flow"><small>Principais escoamentos</small><div><span>Fornecedores</span><b>R$ 1,19 mi</b></div><i style="--w:88%"></i><div><span>Impostos</span><b>R$ 626 mil</b></div><i style="--w:54%"></i></div><div class="card-copy"><div><span class="tag">DataStudio</span><span class="status">Validado</span></div><h3>Concentração de fluxo</h3><p>Top 5, Top 10 ou todos, sem linguagem de competição.</p><button class="text-action" data-open-lab="flow">Configurar componente →</button></div></article>
+        <article class="component-card" data-tags="datastudio powerbi kpi" data-component="progress"><div class="card-preview preview-progress"><small>Realizado × previsto</small><strong>100,92%</strong><div><i></i></div><span>Meta atingida</span></div><div class="card-copy"><div><span class="tag">Multi-BI</span><span class="status">Validado</span></div><h3>Progresso de meta</h3><p>Comparativo com tratamento de zero, ausência de dados e regras condicionais.</p><button class="text-action" data-open-lab="progress">Configurar componente →</button></div></article>
+        <article class="component-card" data-tags="powerbi kpi" data-component="multi"><div class="card-preview preview-multi"><div><small>Entradas</small><b>R$ 5,12 mi</b></div><div><small>Saídas</small><b>R$ 3,94 mi</b></div><div><small>Saldo</small><b>R$ 1,18 mi</b></div></div><div class="card-copy"><div><span class="tag">Power BI</span><span class="status neutral">MVP</span></div><h3>Grid multi-KPI</h3><p>Visão compacta para indicadores relacionados e resumo executivo.</p><button class="text-action" data-open-lab="multi">Configurar componente →</button></div></article>
+      </div>
+    </section>
+
+    <section id="lab" class="section lab-section">
+      <div class="section-heading"><div><span class="kicker">FutureViz Lab</span><h2>Configure visualmente. Entenda pelo código.</h2></div><p>O mesmo estado alimenta a prévia e o código exportável.</p></div>
+      <div class="lab-shell">
+        <aside class="controls" aria-label="Configuração do componente">
+          <label>Componente<select id="componentType"><option value="flow">Concentração de fluxo</option><option value="kpi">KPI essencial</option><option value="progress">Progresso de meta</option><option value="multi">Grid multi-KPI</option></select></label>
+          <label>Plataforma<select id="platform"><option value="datastudio">DataStudio</option><option value="powerbi">Power BI</option></select></label>
+          <div class="control-grid"><label>Dimensão<input id="dimensionName" value="Entidade"></label><label>Métrica<input id="metricName" value="Saída realizada"></label></div>
+          <label>Formato<select id="format"><option value="currency">Moeda — BRL</option><option value="percent">Percentual</option><option value="number">Número</option></select></label>
+          <div class="control-grid"><label>Cor principal<input id="primaryColor" type="color" value="#2563eb"></label><label>Superfície<input id="surfaceColor" type="color" value="#ffffff"></label></div>
+          <label>Arredondamento <output id="radiusOut">14px</output><input id="radius" type="range" min="0" max="28" value="14"></label>
+          <label>Densidade<select id="density"><option value="compact">Compacta</option><option value="comfortable">Confortável</option></select></label>
+          <button id="resetLab" class="button ghost full">Restaurar padrão</button>
+        </aside>
+        <div class="workspace">
+          <div class="workspace-bar"><div class="device-tabs"><button class="device active" data-width="100%">Desktop</button><button class="device" data-width="430px">Mobile</button></div><span id="compatibility">Compatível com DataStudio</span></div>
+          <div class="preview-canvas"><div id="livePreview" class="live-preview"></div></div>
+          <div class="code-panel"><div class="code-toolbar"><div><button class="code-tab active" data-code="template">Template</button><button class="code-tab" data-code="style">Style</button><button class="code-tab" data-code="config">Config</button></div><button id="copyCode" class="copy-button">Copiar código</button></div><textarea id="codeOutput" spellcheck="false" aria-label="Código gerado"></textarea><div class="code-actions"><button id="applyCode" class="button ghost">Aplicar edição na prévia</button><span id="codeMessage">Código gerado pelo configurador</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="documentacao" class="section docs-section">
+      <div class="section-heading"><div><span class="kicker">Documentação aberta</span><h2>Do contrato de dados à validação.</h2></div><p>Cada componente declara campos, comportamento, limitações e versão.</p></div>
+      <div class="docs-grid"><a href="docs/datastudio-templr-guide.md"><span>01</span><h3>Guia DataStudio + Templr</h3><p>Instalação, campos, helpers validados, filtros e segurança.</p></a><a href="docs/component-contract.md"><span>02</span><h3>Contrato de componente</h3><p>Metadados, formatos, estados, temas e compatibilidade.</p></a><a href="ROADMAP.md"><span>03</span><h3>Roadmap público</h3><p>Central de Coleções, Lab, novos componentes e adaptadores.</p></a></div>
+    </section>
+  </main>
+  <footer><div class="brand footer-brand"><span class="brand-mark"><i></i><i></i><i></i></span><span><b>FutureViz</b><small>Components</small></span></div><p>Componentes UI abertos para experiências de BI melhores.</p><span>v1.0.0 · MIT</span></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

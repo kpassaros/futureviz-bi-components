@@ -1,0 +1,6 @@
+entidade,categoria,faixa_atraso,entrada_realizada,saida_realizada,previsto
+Cliente A,Vendas,Em dia,2765466.22,315200.00,2500000.00
+Fornecedor A,Serviços,1-30 dias,420000.00,1197520.78,1080000.00
+Fornecedor B,Impostos,31-60 dias,265000.00,830619.24,790000.00
+Entidade C,Transferências,61-90 dias,1733330.12,626440.10,1700000.00
+Entidade D,Tarifas,Acima de 90 dias,830619.24,204089.25,820000.00

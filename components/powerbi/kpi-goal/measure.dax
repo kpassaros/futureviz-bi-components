@@ -1,0 +1,16 @@
+FutureViz Meta x Realizado =
+VAR CorPrincipal = "#2563EB"
+VAR CorPositiva = "#059669"
+VAR CorNegativa = "#DC2626"
+VAR Rotulo = "Entrada Realizada"
+VAR Realizado = [Entrada Realizada]
+VAR Previsto = [Entrada Prevista]
+VAR Atingimento = DIVIDE(Realizado, Previsto)
+VAR CorEstado = IF(ISBLANK(Atingimento), "#64748B", IF(Atingimento >= 1, CorPositiva, CorNegativa))
+VAR Estado = IF(ISBLANK(Atingimento), "Sem previsão", IF(Atingimento >= 1, "Meta atingida", "Abaixo da meta"))
+RETURN
+"<article style='font-family:Segoe UI;padding:20px;background:#fff;border:1px solid #E2E8F0;border-radius:16px'>" &
+"<small style='color:#64748B'>" & Rotulo & "</small>" &
+"<strong style='display:block;margin:8px 0;color:" & CorPrincipal & ";font-size:30px'>" & FORMAT(Realizado, "R$ #,##0.00") & "</strong>" &
+"<div style='color:" & CorEstado & ";font-weight:700'>" & IF(ISBLANK(Atingimento), "—", FORMAT(Atingimento, "0.00%")) & " · " & Estado & "</div>" &
+"</article>"
