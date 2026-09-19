@@ -1,5 +1,10 @@
 # Changelog
 
-## 2.0.0
+## Reconstrução limpa
 
-Redesign multipágina, coleção curada, modal de visualização, Laboratório Criativo por plataforma, Data Flow Field, guias e identidade FutureViz.
+- Arquitetura por plataforma.
+- 12 cards Power BI.
+- Top N DataStudio.
+- Lab removido.
+- Novo background Data Flow Field.
+- Autoria de Kaíque Passaros.

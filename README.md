@@ -1,17 +1,12 @@
 # FutureViz Components
 
-Componentes curados para Power BI, DataStudio e WebDev.
+Biblioteca pública de componentes para Power BI, DataStudio e WebDev + Data, criada por Kaíque Passaros.
 
-## Conteúdo
+## Esta é uma reconstrução limpa
 
-- 12 componentes recuperados do Power BI UI Cards Lab v1.
-- 8 componentes derivados dos testes validados no DataStudio/Templr.
-- Central de Coleções com visualização em modal.
-- Laboratório Criativo: editar modelo ou criar do zero.
-- Power BI: saída DAX.
-- DataStudio: Template (HTML), Style (CSS) e Experimental (JS).
-- WebDev: HTML, CSS e JS.
-- Gerador de paleta com harmonias e personalização manual.
-- Guias visuais e identidade FutureViz.
+O `index.html` da raiz contém a nova arquitetura por plataforma. Não envie a pasta externa do ZIP para dentro do repositório: envie o conteúdo dela na raiz.
 
-Criado por Kaíque Passaros. Licença MIT.
+- Power BI: 12 componentes do UI Cards Lab.
+- DataStudio: Top N interativo com Template e Style.
+- WebDev + Data: em desenvolvimento.
+- FutureViz Lab: removido desta publicação.
