@@ -1,17 +1,14 @@
-# Meta × realizado — DataStudio
+# KPI versus meta — DataStudio
 
-## Métricas
-1. Realizado — soma — moeda.
-2. Previsto — soma — moeda.
-3. Atingimento — razão decimal.
+Componente validado no Templr para acompanhar realizado, previsto e atingimento.
 
-Campo de atingimento sugerido:
+## Campos
+1. Métrica: realizado.
+2. Métrica: previsto.
+3. Métrica: atingimento decimal (`realizado / previsto`).
 
-```text
-CASE
-  WHEN SUM(Previsto) = 0 THEN 0
-  ELSE SUM(Realizado) / SUM(Previsto)
-END
-```
-
-Cole os arquivos nos campos Template e Style do Templr e deixe JavaScript Helpers vazio.
+## Regras
+- Use o campo percentual como decimal; não multiplique por 100.
+- Decimais são exibidos com no máximo 2 casas.
+- A barra é limitada visualmente a 100%.
+- Mantenha Experimental vazio.

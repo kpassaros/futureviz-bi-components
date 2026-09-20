@@ -1,28 +1,22 @@
 # Roadmap
 
-## v1.1 — Coleção ampliada
-- Comparativo entre períodos.
-- Tabela executiva.
-- Barra de progresso segmentada.
-- Tendência com estados.
-- Temas compartilháveis por URL.
+## Concluído — Coleção DataStudio v1
+- Quatro motores validados no Templr.
+- Oito componentes publicáveis.
+- Código completo por componente.
+- Formatação decimal padronizada.
+- Datas diária, mensal e anual no comparativo.
 
-## v1.2 — FutureViz Lab
-- Presets editáveis.
-- Exportação de arquivos.
-- Validação de contrato de dados.
-- Editor avançado com preview isolado.
-- Histórico local de configurações.
+## Próxima evolução
+- Variante operacional `quanto menor, melhor` para tempo, custo e incidentes.
+- Temas configuráveis e tokens de cor.
+- Grid executivo multi-KPI.
+- Funil de conversão.
+- Testes automatizados de contrato e regressão visual.
 
-## v2.0 — Motor multiplataforma
+## Futuro — Motor multiplataforma
 - Esquema único de componentes.
 - Adaptadores maduros para Power BI e DataStudio.
-- Parâmetros de campo para dimensões dinâmicas.
 - Galeria comunitária.
 - Guia de contribuição de novos adaptadores.
-
-## Pesquisa contínua
-- Alternativa sustentável ao Templr.
-- Estratégia de testes visuais automatizados.
-- Acessibilidade e internacionalização.
-- Novos formatos: funil, timeline, SLA, riscos e narrativa.
+- Pesquisa de alternativa sustentável ao Templr.

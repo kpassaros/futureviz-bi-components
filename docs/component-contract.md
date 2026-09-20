@@ -1,40 +1,34 @@
 # Contrato de componente
 
-Cada componente FutureViz é descrito por um estado independente da plataforma.
+Cada componente FutureViz deve declarar campos, regras, formatação e limitações.
+
+## Regras obrigatórias
+
+1. Entregar Template e Style completos.
+2. Evitar campos calculados quando o Template puder fazer o cálculo.
+3. Usar metadados para nomes de propriedades.
+4. Limitar decimais a no máximo 2 casas.
+5. Tratar nulos e divisão por zero.
+6. Declarar se a lógica é `quanto maior, melhor` ou `quanto menor, melhor`.
+7. Manter Experimental vazio na coleção DataStudio v1.
+8. A prévia deve corresponder ao código disponibilizado.
+9. O README deve informar campos e ordenação necessários.
+
+## Estrutura
 
 ```json
 {
-  "component": "flow-concentration",
+  "component": "period-comparison",
   "platform": "datastudio",
   "fields": {
-    "dimension": { "index": 0, "labelSource": "metadata" },
-    "metric": { "index": 0, "labelSource": "metadata", "format": "currency" }
+    "dimensions": 1,
+    "metrics": 1,
+    "sort": "period-desc"
   },
-  "limit": 5,
-  "theme": {
-    "primary": "#2563eb",
-    "surface": "#ffffff",
-    "radius": 14,
-    "density": "compact"
-  }
+  "format": {
+    "decimalPlacesMax": 2,
+    "date": "automatic"
+  },
+  "experimental": false
 }
 ```
-
-## Campos obrigatórios
-
-- `component`: família visual.
-- `platform`: adaptador de destino.
-- `fields`: contrato de dimensões e métricas.
-- `theme`: tokens visuais.
-
-## Regras
-
-1. Rótulos usam metadados quando a plataforma os fornece.
-2. Formatos não são inferidos silenciosamente quando houver ambiguidade.
-3. O adaptador declara recursos não suportados.
-4. A prévia usa dados fictícios.
-5. O código exportado deve corresponder ao estado exibido.
-
-## Edição de código
-
-A configuração visual é a fonte canônica. Edições avançadas atualizam a prévia, mas só retornam aos controles quando puderem ser analisadas com segurança.

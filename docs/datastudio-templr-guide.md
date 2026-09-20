@@ -2,77 +2,69 @@
 
 ## Instalação
 
-1. No DataStudio, adicione uma visualização da comunidade.
+1. Adicione uma visualização da comunidade no DataStudio.
 2. Informe o caminho `gs://templr`.
-3. Autorize o componente apenas após avaliar a política da organização.
-4. Configure dimensões e métricas conforme o README do componente.
-5. Cole o arquivo `template.html` em **Template**.
-6. Cole `style.css` em **Style**.
-7. Mantenha **JavaScript Helpers (Experimental)** vazio nos componentes v1.
+3. Autorize o componente conforme a política da organização.
+4. Configure os campos descritos no README do componente.
+5. Copie o `template.html` completo para **Template**.
+6. Copie o `style.css` completo para **Style**.
+7. Deixe **JavaScript Helpers / Experimental** vazio.
 
-## Modelo de dados validado
+## Diretriz de facilidade
 
-```json
-{
-  "fields": {
-    "dimensions": [{ "name": "Categoria" }],
-    "metrics": [{ "name": "Saída realizada" }]
-  },
-  "data": {
-    "DEFAULT": [
-      { "dimensions": ["Fornecedores"], "metrics": [1197520.78] }
-    ]
-  }
-}
-```
+O usuário deve apenas selecionar dimensões e métricas e colar os códigos completos. Formatações, estados e cálculos ficam no componente sempre que o Templr permitir.
 
-## Padrões confirmados
+## Formatação numérica
 
-```handlebars
-{{#each data.DEFAULT}}
-  {{lookup dimensions 0}}
-  {{lookup metrics 0}}
-{{else}}
-  Nenhum dado
-{{/each}}
-```
+Todo decimal deve ter no máximo 2 casas, especialmente:
 
-Nome dinâmico do campo:
+- percentuais;
+- variações;
+- taxas;
+- índices;
+- médias;
+- valores monetários.
+
+Padrão validado:
 
 ```handlebars
-{{lookup (lookup fields.dimensions 0) "name"}}
-{{lookup (lookup fields.metrics 0) "name"}}
+{{divide (round (multiply (lookup metrics 0) 100)) 100}}
 ```
 
-BRL:
+Percentual a partir de um decimal:
 
 ```handlebars
-R$ {{localeString (lookup metrics 0) "pt-BR"}}
+{{divide (round (multiply (lookup metrics 0) 10000)) 100}}%
 ```
 
-Percentual:
+## Datas no comparativo
 
-```handlebars
-{{replace (decimalPrecision (multiply (lookup metrics 0) 100) 2) "." ","}}%
-```
+O componente de períodos aceita:
+
+- `YYYYMMDD` e apresenta dia, mês e ano;
+- `YYYYMM` e apresenta mês e ano;
+- `YYYY` e apresenta o ano.
+
+A dimensão deve ser ordenada de forma decrescente para que as duas primeiras linhas representem os períodos mais recentes.
 
 ## Helpers validados
 
-- `each`, `lookup`, `add`, `@index`.
-- `localeString`, `decimalPrecision`.
-- `multiply`, `replace`, `gte`, `eq`.
+- `each`, `lookup`, `add`, `@index`, `@root`;
+- `localeString`;
+- `round`, `multiply`, `divide`, `subtract`;
+- `gte`, `eq`;
 - `if`, `else`.
 
-`length` não ficou disponível no contexto testado.
+Não utilize helpers fora desta lista sem validação no Templr.
 
-## Filtros
+## Comportamento confirmado
 
-O Templr recebeu controles de período, filtros categóricos, filtros combinados e cross-filter originado por outros gráficos. Não foi identificado mecanismo para emitir cross-filter pelo Template.
-
-## Desempenho
-
-A lista de concentração renderizou e filtrou 2.508 registros sem travamento perceptível no cenário validado. O desempenho pode variar com fonte, navegador, complexidade do template e volume.
+- Recebe filtros e controles do relatório.
+- Atualiza os dados conforme as seleções.
+- Renderiza estados vazios.
+- Não depende de JavaScript Helpers nesta versão.
+- Não há garantia de emissão de cross-filter pelo Template.
 
 ## Segurança
 
-O Templr é uma dependência externa. Não inclua seu bundle neste repositório sem licença verificável. Evite dados sensíveis e consulte `SECURITY.md`.
+O Templr é uma dependência externa. Não inclua seu bundle no repositório sem licença verificável e evite dados sensíveis.

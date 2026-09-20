@@ -1,8 +1,14 @@
-# Upload limpo no GitHub
+# Upload limpo
 
-1. Exclua ou substitua o `index.html` antigo da raiz.
-2. Descompacte o pacote.
-3. Confirme que `index.html`, `README.md`, `assets/` e `colecoes/` estão no primeiro nível.
-4. Envie o conteúdo interno, não a pasta `futureviz-clean-repository`.
-5. Após o commit, confira o código-fonte publicado: a primeira linha contém `FUTUREVIZ PLATFORM LIBRARY 2026-09-18`.
-6. Aguarde o GitHub Actions concluir e abra o Pages com `?refresh=20260918` para evitar cache.
+1. Exclua os arquivos antigos do repositório.
+2. Extraia o ZIP entregue.
+3. Envie o conteúdo interno diretamente para a raiz.
+4. Confirme que `index.html`, `README.md`, `assets/`, `colecoes/` e `components/` aparecem na raiz.
+5. Aguarde o workflow **Deploy Pages**.
+6. Abra o site com `?refresh=20260919` para evitar cache antigo.
+
+Commit sugerido:
+
+```text
+feat: publica coleção DataStudio validada
+```
