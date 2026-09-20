@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-09-20 — Padronização das coleções e paridade DataStudio
+
+### Alterado
+- Power BI, DataStudio e WebDev agora usam a mesma estrutura de página.
+- Filtros independentes por estilo do componente e setor de utilização.
+- Um único botão “Usar componente” por card.
+- Modais fechados por botão X e clique fora.
+- “Ver guia” renomeado para “Ver guia de utilização”.
+- Preview do componente incluído nos modais das três ferramentas.
+- Informações promocionais de quantidade, arquivos, dependências e casas decimais removidas dos cabeçalhos das coleções.
+
+### DataStudio
+- Receitas repetidas removidas.
+- Coleção reconstruída com as mesmas 12 famílias visuais do Power BI.
+- Contratos de dimensões e métricas documentados por componente.
+
 ## 2026-09-20 — Paridade WebDev e navegação DataStudio
 
 ### Adicionado
@@ -17,7 +33,7 @@
 ## 2026-09-19 — Coleção DataStudio ampliada
 
 ### Adicionado
-- 8 componentes DataStudio com códigos completos.
+- 12 componentes DataStudio com códigos completos.
 - KPI versus meta validado no Templr.
 - Comparativo de períodos validado, com formatação automática de `YYYYMMDD`, `YYYYMM` e `YYYY`.
 - Status operacional validado com estados saudável, atenção e crítico.

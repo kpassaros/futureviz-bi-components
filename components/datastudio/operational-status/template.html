@@ -1,18 +1,1 @@
-<article class="fv-status-card">
-<header class="fv-card-header"><div class="fv-card-heading"><h2>Status operacional</h2><p>Acompanhamento por {{lookup (lookup fields.dimensions 0) "name"}}</p></div><span class="fv-card-badge">Monitoramento</span></header>
-<main class="fv-status-list">
-{{#each data.DEFAULT}}
-<section class="fv-status-item {{#if (lookup metrics 1)}}{{#if (gte (divide (lookup metrics 0) (lookup metrics 1)) 1)}}is-healthy{{else}}{{#if (gte (divide (lookup metrics 0) (lookup metrics 1)) 0.8)}}is-warning{{else}}is-critical{{/if}}{{/if}}{{else}}is-critical{{/if}}">
-  <div class="fv-item-header"><div class="fv-item-title"><span class="fv-status-dot"></span><strong title="{{lookup dimensions 0}}">{{lookup dimensions 0}}</strong></div><span class="fv-item-status">{{#if (lookup metrics 1)}}{{#if (gte (divide (lookup metrics 0) (lookup metrics 1)) 1)}}Saudável{{else}}{{#if (gte (divide (lookup metrics 0) (lookup metrics 1)) 0.8)}}Atenção{{else}}Crítico{{/if}}{{/if}}{{else}}Sem referência{{/if}}</span></div>
-  <div class="fv-item-values">
-    <div class="fv-value-block"><span>{{lookup (lookup @root.fields.metrics 0) "name"}}</span><strong>{{localeString (divide (round (multiply (lookup metrics 0) 100)) 100) "pt-BR"}}</strong></div>
-    <div class="fv-value-divider"></div>
-    <div class="fv-value-block is-reference"><span>{{lookup (lookup @root.fields.metrics 1) "name"}}</span><strong>{{localeString (divide (round (multiply (lookup metrics 1) 100)) 100) "pt-BR"}}</strong></div>
-    <div class="fv-health-value"><span>Atingimento</span><strong>{{#if (lookup metrics 1)}}{{localeString (divide (round (multiply (divide (lookup metrics 0) (lookup metrics 1)) 10000)) 100) "pt-BR"}}%{{else}}0%{{/if}}</strong></div>
-  </div>
-  <div class="fv-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"><div class="fv-progress-bar" style="width:{{#if (lookup metrics 1)}}{{#if (gte (divide (lookup metrics 0) (lookup metrics 1)) 1)}}100{{else}}{{#if (gte (divide (lookup metrics 0) (lookup metrics 1)) 0)}}{{divide (round (multiply (divide (lookup metrics 0) (lookup metrics 1)) 10000)) 100}}{{else}}0{{/if}}{{/if}}{{else}}0{{/if}}%"></div></div>
-</section>
-{{else}}<div class="fv-empty">Nenhum dado encontrado</div>{{/each}}
-</main>
-<footer class="fv-card-footer"><div class="fv-legend-item is-healthy"><span></span>Saudável</div><div class="fv-legend-item is-warning"><span></span>Atenção</div><div class="fv-legend-item is-critical"><span></span>Crítico</div></footer>
-</article>
+<article class="fv-card"><header class="fv-head"><div><h2>Status operacional</h2><p>Por {{lookup (lookup fields.dimensions 0) "name"}}</p></div><span class="fv-badge">Monitoramento</span></header><main class="fv-list">{{#each data.DEFAULT}}<div class="fv-row"><span>{{lookup dimensions 0}}</span><b class="{{#if (lookup metrics 1)}}{{#if (gte (divide (lookup metrics 0) (lookup metrics 1)) 1)}}fv-positive{{else}}{{#if (gte (divide (lookup metrics 0) (lookup metrics 1)) 0.8)}}fv-warning{{else}}fv-negative{{/if}}{{/if}}{{else}}fv-negative{{/if}}">{{#if (lookup metrics 1)}}{{localeString (divide (round (multiply (divide (lookup metrics 0) (lookup metrics 1)) 10000)) 100) "pt-BR"}}%{{else}}0%{{/if}}</b><div class="fv-mini-track"><i style="width:{{#if (lookup metrics 1)}}{{#if (gte (divide (lookup metrics 0) (lookup metrics 1)) 1)}}100{{else}}{{divide (round (multiply (divide (lookup metrics 0) (lookup metrics 1)) 10000)) 100}}{{/if}}{{else}}0{{/if}}%"></i></div></div>{{else}}<div class="fv-empty">Nenhum dado encontrado</div>{{/each}}</main></article>

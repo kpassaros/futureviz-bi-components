@@ -4,12 +4,12 @@ Data da consolidação: 2026-09-20.
 
 ## Power BI
 - 12 componentes mantidos.
-- Busca e filtros por categoria.
+- Busca e filtros por estilo e setor.
 
 ## DataStudio
-- 8 componentes disponíveis.
-- 4 motores validados no DataStudio / Templr.
-- Busca, contagem e filtros por categoria.
+- 12 componentes disponíveis.
+- 4 padrões-base validados no DataStudio / Templr e expandidos para 12 famílias visuais.
+- Busca, contagem e filtros por estilo e setor.
 - Template e Style completos.
 - Experimental vazio.
 
@@ -18,7 +18,7 @@ Data da consolidação: 2026-09-20.
 - HTML, CSS e JavaScript completos por componente.
 - Sem dependências externas.
 - Configuração por objeto JavaScript.
-- Busca, contagem e filtros por categoria.
+- Busca, contagem e filtros por estilo e setor.
 
 ## Padrões gerais
 - “Campos/dados Mínimos” como nomenclatura oficial.

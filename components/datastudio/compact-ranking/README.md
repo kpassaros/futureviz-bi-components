@@ -1,7 +1,7 @@
-# Comparativo de períodos — DataStudio
+# Ranking compacto — DataStudio
 
 ## Campos/dados Mínimos
-- 1 dimensão temporal
+- 1 dimensão categórica
 - 1 métrica numérica
 - ordenação decrescente
 
