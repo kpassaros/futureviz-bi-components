@@ -6,7 +6,7 @@ Cada pasta contém:
 
 - `template.html`: código completo para Template.
 - `style.css`: código completo para Style.
-- `README.md`: contrato mínimo e regras de uso.
+- `README.md`: campos/dados mínimos e regras de uso.
 
 O campo Experimental deve permanecer vazio em todos os componentes desta versão.
 
@@ -25,3 +25,14 @@ O campo Experimental deve permanecer vazio em todos os componentes desta versão
 ## Power BI
 
 A coleção Power BI permanece em `components/powerbi`.
+
+## WebDev
+
+Cada pasta em `components/webdev` contém:
+
+- `index.html`;
+- `style.css`;
+- `script.js`;
+- `README.md` com campos/dados mínimos.
+
+Os componentes não exigem dependências externas e expõem um método global `render`.
