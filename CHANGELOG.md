@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-09-20 — Paridade WebDev e navegação DataStudio
+
+### Adicionado
+- 12 componentes WebDev equivalentes à coleção Power BI.
+- HTML, CSS, JavaScript e README por componente.
+- Busca, contagem e filtros por categoria na coleção WebDev.
+- Busca, contagem e filtros por categoria na coleção DataStudio.
+
+### Alterado
+- “Contrato mínimo” passou a se chamar “Campos/dados Mínimos”.
+- Home e hub de coleções agora apresentam WebDev como coleção disponível.
+- Documentação atualizada para a arquitetura multiplataforma.
+
+
 ## 2026-09-19 — Coleção DataStudio ampliada
 
 ### Adicionado

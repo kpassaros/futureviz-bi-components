@@ -1,32 +1,23 @@
 # FutureViz Components
 
-Biblioteca pública de componentes para Power BI e DataStudio, criada por Kaíque Passaros.
+Biblioteca pública e multiplataforma de componentes para Power BI, DataStudio e dashboards WebDev, criada por Kaíque Passaros.
 
 ## Coleções publicadas
 
-- **Power BI:** 12 componentes do UI Cards Lab com DAX e HTML Content.
-- **DataStudio:** 8 componentes prontos para Templr, construídos sobre 4 motores validados.
-- **WebDev + Data:** em desenvolvimento.
+- **Power BI:** 12 componentes com DAX e HTML Content.
+- **DataStudio:** 8 componentes para Templr, construídos sobre 4 motores validados.
+- **WebDev:** 12 componentes equivalentes em HTML, CSS e JavaScript, sem dependências externas.
 
-## DataStudio nesta versão
+## Diretrizes
 
-1. KPI versus meta.
-2. Comparativo de períodos.
-3. Status operacional.
-4. Ranking Top N.
-5. Orçamento consumido.
-6. Concentração de fluxo.
-7. SLA e atendimento.
-8. Saúde do estoque.
-
-### Diretrizes
-
-- Template e Style completos para copiar e colar.
-- JavaScript Helpers / Experimental vazio.
-- Configuração mínima de dimensões e métricas.
-- Formatação automática sempre que suportada pelo Template.
+- Códigos completos, prontos para copiar e colar.
+- Campos/dados mínimos claramente documentados.
+- Configuração mínima e formatação automática.
 - Campos decimais limitados a no máximo 2 casas.
-- Nomes de propriedades obtidos dos metadados do relatório.
+- Previews fiéis aos componentes.
+- Busca e categorização nas três coleções.
+- WebDev configurável por objetos JavaScript.
+- Experimental vazio na coleção DataStudio atual.
 
 ## Publicação
 

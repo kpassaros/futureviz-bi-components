@@ -1,29 +1,28 @@
-# Validação da coleção DataStudio
+# Validação da versão multiplataforma
 
-Data da consolidação: 2026-09-19.
+Data da consolidação: 2026-09-20.
 
-## Motores validados no DataStudio / Templr
+## Power BI
+- 12 componentes mantidos.
+- Busca e filtros por categoria.
 
-- KPI versus meta.
-- Comparativo de períodos.
-- Status operacional.
-- Ranking Top 5, Top 10 e Todos.
-
-## Receitas derivadas dos motores validados
-
-- Orçamento consumido.
-- Concentração de fluxo.
-- SLA e atendimento.
-- Saúde do estoque.
-
-## Regras verificadas
-
-- Códigos completos de Template e Style.
+## DataStudio
+- 8 componentes disponíveis.
+- 4 motores validados no DataStudio / Templr.
+- Busca, contagem e filtros por categoria.
+- Template e Style completos.
 - Experimental vazio.
-- Nomes de propriedades dinâmicos.
-- Decimais com no máximo 2 casas.
-- Tratamento de divisão por zero nos componentes aplicáveis.
-- Barras limitadas visualmente a 100%.
-- Data diária, mensal e anual no comparativo.
-- Estados vazios.
-- Página da coleção responsiva em desktop e mobile.
+
+## WebDev
+- 12 componentes equivalentes à coleção Power BI.
+- HTML, CSS e JavaScript completos por componente.
+- Sem dependências externas.
+- Configuração por objeto JavaScript.
+- Busca, contagem e filtros por categoria.
+
+## Padrões gerais
+- “Campos/dados Mínimos” como nomenclatura oficial.
+- No máximo 2 casas decimais.
+- Responsividade verificada em desktop e mobile.
+- Modais e códigos completos verificados.
+- Nenhuma referência local quebrada.
