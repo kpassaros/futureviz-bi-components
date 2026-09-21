@@ -6,8 +6,11 @@
 2. Informe o caminho `gs://templr`.
 3. Autorize o componente conforme a política da organização.
 4. Configure os campos descritos no README do componente.
-5. Copie o `template.html` completo para **Template**.
-6. Copie o `style.css` completo para **Style**.
+5. Na visualização do componente, escolha o modo **Claro** ou **Escuro**.
+6. Copie o `template.html` completo para **Template**.
+7. Copie o `style.css` completo para **Style**.
+
+O seletor de modo atualiza a prévia, o atributo `data-theme` do Template e as regras de contraste do Style. Sempre copie novamente os dois códigos depois de trocar o modo. Claro e Escuro são requisitos obrigatórios de todos os componentes FutureViz, em todas as plataformas.
 7. Deixe **JavaScript Helpers / Experimental** vazio.
 
 ## Diretriz de facilidade

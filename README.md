@@ -15,6 +15,8 @@ Biblioteca pública e multiplataforma de componentes para Power BI, DataStudio e
 - Configuração mínima e formatação automática.
 - Campos decimais limitados a no máximo 2 casas.
 - Previews fiéis aos componentes.
+- Modos Claro e Escuro obrigatórios em todos os componentes e plataformas.
+- O seletor de tema atualiza simultaneamente a prévia e o código para copiar.
 - Busca e filtros por estilo do componente e setor nas três coleções.
 - WebDev configurável por objetos JavaScript.
 - Experimental vazio na coleção DataStudio atual.

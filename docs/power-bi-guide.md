@@ -16,10 +16,14 @@ Exemplo:
 Título da Métrica = SELECTEDVALUE('Parâmetro Métrica'[Parâmetro Métrica], "Entrada Realizada")
 ```
 
+## Temas Claro e Escuro
+
+Na visualização do componente, escolha **Claro** ou **Escuro** antes de copiar. O seletor atualiza a prévia e a medida DAX completa, incluindo o atributo `data-theme` e as cores estruturais do card. Se trocar o modo, copie novamente a DAX.
+
 ## Checklist
 
 - Validar HTML no visual escolhido.
 - Confirmar contexto de filtros.
 - Testar nulos, zero e negativos.
-- Testar temas e tamanhos.
+- Testar os modos Claro e Escuro e os tamanhos.
 - Revisar política organizacional para visuais personalizados.
