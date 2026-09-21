@@ -1,1 +1,75 @@
-<!doctype html><!-- FUTUREVIZ PLATFORM LIBRARY 2026-09-18 --><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home · FutureViz</title><link rel="icon" href="assets/brand/favicon.svg"><link rel="stylesheet" href="assets/css/styles.css"></head><body><canvas id="flow"></canvas><div class="ambient"></div><div class="nav-wrap"><header class="navbar"><a class="brand" href="index.html"><img src="assets/brand/futureviz.svg"><span><b>FutureViz</b><small>Components</small></span></a><nav class="nav"><a class="active" href="index.html">Home</a><a class="" href="colecoes/index.html">Coleções</a><a class="" href="guias/index.html">Guias</a><a class="" href="sobre/index.html">Sobre</a></nav><div class="nav-actions"><a href="https://github.com/kpassaros/futureviz-bi-components" target="_blank">GitHub ↗</a></div></header></div><main><section class="hero"><span class="eyebrow">Biblioteca pública para dados e BI</span><h1>Código real. Visual replicável. Decisão mais clara.</h1><p>Coleções independentes por plataforma, documentação de uso e componentes construídos para funcionar no dia a dia.</p><div class="actions"><a class="button primary" href="colecoes/index.html">Explorar coleções</a><a class="button" href="guias/index.html">Abrir guias</a></div></section><section class="platforms"><a class="platform" href="colecoes/power-bi/index.html"><span>12 componentes</span><h2>Power BI</h2><p>Cards do UI Pack com medidas DAX para HTML Content.</p><footer><b>DAX + HTML</b><b>Explorar →</b></footer></a><a class="platform" href="colecoes/datastudio/index.html"><span>12 componentes</span><h2>DataStudio</h2><p>Doze componentes equivalentes ao Power BI, prontos para o Templr.</p><footer><b>Handlebars + CSS</b><b>Explorar →</b></footer></a><a class="platform" href="colecoes/webdev-data/index.html"><span>12 componentes</span><h2>WebDev + Data</h2><p>Componentes nativos em HTML, CSS e JavaScript, sem dependências.</p><footer><b>HTML + CSS + JS</b><b>Explorar →</b></footer></a></section></main><footer class="footer"><div><b>FutureViz Components</b><br>Biblioteca criada por Kaíque Passaros.</div><div><a href="https://github.com/kpassaros/futureviz-bi-components" target="_blank">GitHub</a><a href="https://kpassaros.github.io/portfolio-dados-bi/" target="_blank">Portfólio</a></div></footer><script src="assets/js/core.js"></script></body></html>
+<!doctype html>
+<!-- FUTUREVIZ PLATFORM LIBRARY 2026-09-18 -->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Componentes visuais reutilizáveis para Power BI, DataStudio e WebDev.">
+  <title>Home · FutureViz</title>
+  <link rel="icon" href="assets/brand/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <canvas id="flow"></canvas>
+  <div class="ambient"></div>
+  <div class="nav-wrap">
+    <header class="navbar">
+      <a class="brand" href="index.html">
+        <img src="assets/brand/futureviz.svg" alt="FutureViz">
+        <span><b>FutureViz</b><small>Components</small></span>
+      </a>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="colecoes/index.html">Coleções</a>
+        <a href="guias/index.html">Guias</a>
+        <a href="sobre/index.html">Sobre</a>
+      </nav>
+      <div class="nav-actions"><a href="https://github.com/kpassaros/futureviz-bi-components" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+    </header>
+  </div>
+  <main>
+    <section class="hero home-hero">
+      <div class="home-copy">
+        <span class="eyebrow">Biblioteca pública para dados e BI</span>
+        <h1>Código real. Visual replicável. Decisão mais clara.</h1>
+        <p>Coleções independentes por plataforma, documentação de uso e componentes construídos para funcionar no dia a dia.</p>
+        <div class="actions">
+          <a class="button primary" href="colecoes/index.html">Explorar coleções</a>
+          <a class="button" href="guias/index.html">Abrir guias</a>
+        </div>
+      </div>
+      <div class="home-showcase" aria-label="Exemplos de componentes FutureViz">
+        <div class="showcase-glow"></div>
+        <article class="showcase-card showcase-back">
+          <header><div><small>Planejamento</small><h2>Meta mensal</h2></div><span>78%</span></header>
+          <strong>R$ 780 mil</strong>
+          <div class="showcase-progress"><i style="width:78%"></i></div>
+          <footer>de R$ 1 milhão</footer>
+        </article>
+        <article class="showcase-card showcase-middle">
+          <header><div><small>Vendas</small><h2>Receita por canal</h2></div><span>Top 3</span></header>
+          <div class="showcase-ranking">
+            <p><b>Direto</b><strong>R$ 482 mil</strong></p><i><b style="width:100%"></b></i>
+            <p><b>Parceiros</b><strong>R$ 391 mil</strong></p><i><b style="width:81%"></b></i>
+          </div>
+        </article>
+        <article class="showcase-card showcase-front">
+          <header><div><small>Financeiro</small><h2>Fluxo de caixa</h2></div><span>Consolidado</span></header>
+          <strong>R$ 124 mil</strong><p>saldo líquido</p>
+          <div class="showcase-columns">
+            <div><small>Entradas</small><b>R$ 342 mil</b></div>
+            <div><small>Saídas</small><b>R$ 218 mil</b></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="platforms">
+      <a class="platform" href="colecoes/power-bi/index.html"><span>12 componentes</span><h2>Power BI</h2><p>Cards do UI Pack com medidas DAX para HTML Content.</p><footer><b>DAX + HTML</b><b>Explorar →</b></footer></a>
+      <a class="platform" href="colecoes/datastudio/index.html"><span>12 componentes</span><h2>DataStudio</h2><p>Doze componentes equivalentes ao Power BI, prontos para o Templr.</p><footer><b>Handlebars + CSS</b><b>Explorar →</b></footer></a>
+      <a class="platform" href="colecoes/webdev-data/index.html"><span>12 componentes</span><h2>WebDev + Data</h2><p>Componentes nativos em HTML, CSS e JavaScript, sem dependências.</p><footer><b>HTML + CSS + JS</b><b>Explorar →</b></footer></a>
+    </section>
+  </main>
+  <footer class="footer"><div><b>FutureViz Components</b><br>Biblioteca criada por Kaíque Passaros.</div><div><a href="https://github.com/kpassaros/futureviz-bi-components" target="_blank" rel="noreferrer">GitHub</a><a href="https://kpassaros.github.io/portfolio-dados-bi/" target="_blank" rel="noreferrer">Portfólio</a></div></footer>
+  <script src="assets/js/core.js"></script>
+</body>
+</html>
